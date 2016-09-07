@@ -1,0 +1,14 @@
+"View": {
+	layout: "composite",
+	width: Titanium.UI.FILL,
+	height: 50,
+	backgroundColor: "red",
+	top: -50
+},
+"#errorText": {
+	font: {
+		fontSize: "15dip",
+	},
+	color: "white",
+	textAlign: 'center'
+},

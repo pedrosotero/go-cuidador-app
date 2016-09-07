@@ -1,0 +1,5 @@
+<Alloy>
+    <View id="errorContainer">
+        <Label id="errorText"></Label>
+    </View>
+</Alloy>

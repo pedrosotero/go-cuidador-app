@@ -1,0 +1,25 @@
+<Alloy>
+    <Window id="win">
+        <ScrollView>
+            <ImageView class="logo" image="/images/top5-rio.png"/>
+            <View class="form">
+                <Require src="form/TextField" hintText="Nome" id="first_name"></Require>
+                <Require src="form/TextField" hintText="Sobrenome" id="last_name"></Require>
+                <Require src="form/TextField" hintText="Email" id="email"></Require>
+                <Require src="form/TextField" tipo="password" hintText="Senha" id="password"></Require>
+                <Require src="form/TextField" tipo="password" hintText="Confimar Senha" id="repassword"></Require>
+                <View class="form-group">
+                    <Button class="btn" onClick="onRegisterClick">CADASTRAR</Button>
+                </View>
+                <View class="separar">
+                    <Label class="ou">ou</Label>
+                </View>
+                <View class="form-group">
+                    <View class="btnFacebook" onClick="onFacebookLoginClick">
+                        <ImageView class="iconFace"/>
+                    </View>
+                </View>
+            </View>
+        </ScrollView>
+    </Window>
+</Alloy>

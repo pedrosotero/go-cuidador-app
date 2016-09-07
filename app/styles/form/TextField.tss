@@ -1,0 +1,41 @@
+".form-group" : {
+	height: "60dip"
+},
+
+".txt" : {
+	top: "26dip",
+	left: "10dip",
+	font: {
+		fontSize: "18dip",
+	},
+	color: "#d0d0d2"
+},
+
+".txt[platform=android]" : {
+	top: "27dip",
+	left: "10dip",
+	font: {
+		fontSize: "18dip",
+	},
+	color: "#d0d0d2"
+},
+
+".ou" : {
+	top: 0,
+	font: {
+		fontSize: "18dip",
+	},
+	color: "#d0d0d2"
+},
+
+"TextField" : {
+	width: Titanium.UI.FILL,
+    height: "45dip",
+    bottom: 0,
+	backgroundColor: "white",
+	font: {
+		fontSize: "18dip",
+	},
+	color: "#000000",
+	borderRadius: "3dip",
+}

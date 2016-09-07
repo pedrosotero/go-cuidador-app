@@ -1,0 +1,122 @@
+"Window": {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+	backgroundColor: "#FB94C9",
+},
+"ScrollView": {
+	layout: "vertical",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+},
+
+".logo": {
+	width: "120dip",
+	height: "70dip",
+	top: "35dip",
+	bottom: "0"
+},
+
+".logo[platform=android]": {
+	width: "120dip",
+	height: "70dip",
+	top: "15dip",
+	bottom: "0"
+},
+
+".form" : {
+	layout: "vertical",
+	width: "85%",
+	top: 0,
+},
+
+".form[platform=android]" : {
+	layout: "vertical",
+	width: "80%",
+	top: 0,
+},
+
+".form-group" : {
+	height: "60dip"
+},
+
+".btnLogar" : {
+	width: Titanium.UI.FILL,
+    height: "45dip",
+    top: "13dip",
+    backgroundColor: "transparent",
+    borderRadius: "3dip",
+    borderColor: "white",
+    borderStyle: "2dip",
+    font: {
+		fontSize: "18dip",
+	},
+},
+
+".btn" : {
+	width: "100%",
+    height: "45dip",
+    top: "13dip",
+    backgroundColor: "#58D3F7",
+    borderRadius: "3dip",
+    font: {
+		fontSize: "18dip",
+	},
+	color: "white"
+},
+
+".btnFacebook" : {
+	layout: "composite",
+	width: Titanium.UI.FILL,
+    height: "45dip",
+    top: "13dip",
+	backgroundColor: "#3B5998",
+	borderRadius: "3dip",
+},
+
+".iconFace": {
+	width: "253dip",
+	height: "45dip",
+	image: "/images/btn-facebook.png"
+},
+
+".txtFace": {
+	font: {
+		fontSize: "18dip",
+	},
+	color: "white",
+	left: "28%"
+},
+
+".txtCadastro": {
+	width: "100%",
+	textAlign: "center",
+	font: {
+		fontSize: "18dip",
+	},
+	color: "white",
+},
+
+".separar": {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.SIZE,
+	 top: "18dip",
+	 bottom: "6dip"
+},
+
+".linha": {
+	width: Titanium.UI.FILL,
+    height: "1dip",
+    backgroundColor: "#35FFFFFF"
+},
+
+".cadastro" : {
+	layout: "horizontal",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+	top: "15dip"
+}
+
+".imgs" : {
+	width: Titanium.UI.FILL,
+    height: Titanium.UI.FILL,
+}

@@ -1,0 +1,6 @@
+<Alloy>
+    <View class="form-group">
+        <TextField id="textField" onFocus="onTextAreaFocus" onChange="onTextAreaChange"/>
+        <Label class="txt" id="hintText" onClick="onHintTextClick"></Label>
+    </View>
+</Alloy>

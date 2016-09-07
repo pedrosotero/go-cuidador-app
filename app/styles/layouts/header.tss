@@ -1,0 +1,5 @@
+"View":{
+    backgroundColor: "red",
+    width: Titanium.UI.FILL,
+    height: 75,
+},

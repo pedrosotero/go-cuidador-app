@@ -9,3 +9,5 @@ tmp
 .settings
 Thumbs.db
 .idea
+/platform
+i18n

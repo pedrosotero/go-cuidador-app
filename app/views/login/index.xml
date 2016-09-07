@@ -1,0 +1,30 @@
+<Alloy>
+    <Window id="win">
+        <ScrollView>
+            <ImageView class="logo" image="/images/top5-rio.png"/>
+            <View class="form">
+                <Require src="form/TextField" hintText="Email" id="email"></Require>
+                <Require src="form/TextField" tipo="password" hintText="Password" id="password"></Require>
+                <View class="form-group">
+                    <Button class="btn" onClick="onLoginClick">ENTRAR</Button>
+                </View>
+                <View class="separar">
+                    <Label class="txtCadastro">ou</Label>
+                </View>
+                <View class="form-group">
+                    <View class="btnFacebook" onClick="onFacebookLoginClick">
+                        <ImageView class="iconFace"/>
+                    </View>
+                </View>
+                <View class="separar"></View>
+                <View class="separar">
+                    <View class="linha"></View>
+                </View>
+                <View class="form-group cadastro">
+                    <Label class="txtCadastro">Não possui cadastro?</Label>
+                    <Button class="btn" onClick="onRegisterClick">CADASTRE-SE</Button>
+                </View>
+            </View>
+        </ScrollView>
+    </Window>
+</Alloy>
