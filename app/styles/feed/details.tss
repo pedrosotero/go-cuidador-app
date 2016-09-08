@@ -1,0 +1,14 @@
+".container": {
+	layout: "vertical",
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+	backgroundColor: "white",
+},
+
+"ScrollView":{
+    layout: 'vertical',
+    width: Titanium.UI.FILL,
+    height: Titanium.UI.FILL,
+    top: '0',
+    backgroundColor: "pink"
+},

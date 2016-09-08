@@ -1,7 +1,7 @@
 <Alloy>
     <Window class="container" id="win">
         <Require src="layouts/header"></Require>
-        <ListView>
+        <ListView id="listView">
             <ListSection>
                 <ListItem title="List item 1"></ListItem>
                 <ListItem title="List item 2"></ListItem>
