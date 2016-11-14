@@ -3,18 +3,4 @@
 	width: Titanium.UI.FILL,
 	height: Titanium.UI.FILL,
 	backgroundColor: "white",
-},
-
-"ListView":{
-    layout: 'vertical',
-    width: Titanium.UI.FILL,
-    height: Titanium.UI.FILL,
-    top: '0',
-    backgroundColor: "green"
-},
-
-"ListItem":{
-    width: Titanium.UI.FILL,
-    height: 120,
-    backgroundColor: "blue"
 }

@@ -1,61 +1,25 @@
 <Alloy>
     <Window class="container" id="win">
-        <Require src="layouts/header"></Require>
+        <ActionBar displayHomeAsUp="true" onHomeIconItemSelected="close">
+        </ActionBar>
+        <Menu id="menu" platform="android">
+            <MenuItem title="Ligar">
+            </MenuItem>
+            <MenuItem title="Enviar E-mail">
+            </MenuItem>
+        </Menu>
         <ScrollView>
-            <ImageView></ImageView>
-            <Label>
-                Lorem ipsum dolor sit amet, nec id illum inciderint, quidam aliquip pro ei, usu ferri assentior id.
-                At eos aeterno aliquid, commodo integre usu no. Malis novum corpora vix in. In nec error errem indoctum.
+            <ImageView image="https://api.adorable.io/avatars/500/i"></ImageView>
+            <Label class="title">Nkosana Arcangelo</Label>
+            <Label class="desciption">                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget augue ut velit vulputate tincidunt sed non ligula. Etiam sit amet lacus augue. Aenean rutrum lacus et risus dapibus, ac efficitur ipsum luctus. Pellentesque ut mollis odio. Proin accumsan scelerisque erat maximus tempor. Quisque pharetra leo vitae leo gravida tristique. Nam efficitur quam quis ipsum eleifend consequat. Curabitur at ligula lorem. Donec eu semper quam, varius consectetur enim. Maecenas nec bibendum elit, et ullamcorper ligula. Aenean non fermentum dolor. Maecenas lorem odio, vulputate quis blandit non, tincidunt vitae mi. Praesent eu mi et velit bibendum congue.
 
-                Eu cum velit quodsi. Pri ne primis dicunt nostrud. Legere noster mea ex. Audire detraxit mel at, quidam
-                quaerendum et nam, elitr admodum vel te. Invenire tincidunt mediocritatem pri an, an elit clita sit.
+                Praesent pellentesque sit amet neque vel viverra. Pellentesque viverra arcu sit amet lorem tristique, porttitor cursus tellus facilisis. Mauris congue lacus eu neque hendrerit tincidunt. In hac habitasse platea dictumst. Ut ullamcorper, sapien sit amet mollis mattis, lectus nisi dictum ante, eget vestibulum nisl erat in nisi. Cras semper nunc ut quam consequat, vitae sagittis libero gravida. Sed porta eleifend mauris, sit amet euismod risus. Nulla eget tortor nisi.
 
-                Eam ad gubergren intellegebat, in eos summo iriure liberavisse, unum democritum at sit. Ea ancillae
-                laboramus elaboraret quo. Viris propriae recusabo duo ut. Te tantas timeam has.
+                Quisque pretium mi nec hendrerit pellentesque. Etiam porttitor tellus ipsum, at euismod neque consectetur in. Sed euismod sodales nunc, sit amet euismod dolor venenatis vitae. Vivamus vel convallis erat. Vivamus non placerat est. Fusce pharetra, nulla ac volutpat finibus, leo est rutrum quam, eget efficitur nibh lorem ac arcu. Nullam augue ipsum, egestas nec ipsum non, lobortis fringilla tellus.
 
-                Sed ei numquam corrumpit, cu elitr ridens officiis duo, quo ad periculis splendide quaerendum. Atqui
-                munere ad est, at quem torquatos intellegam has. Eam magna electram convenire no, ea nominavi epicurei
-                reprimique qui. Cu quis munere scripta has. Ad est veniam abhorreant.
+                Proin dictum interdum metus quis posuere. Suspendisse at ante eu eros imperdiet fringilla vel vel nisi. Phasellus molestie dapibus eros sit amet pellentesque. Donec massa magna, ultricies tincidunt bibendum non, congue ac lorem. Mauris ut placerat mauris, id aliquet ex. Suspendisse gravida id dui vitae fringilla. Curabitur cursus odio ut quam convallis, in fermentum nunc scelerisque. Sed nibh tortor, elementum at interdum sit amet, fermentum quis turpis. Donec maximus velit non velit ullamcorper, nec molestie nisl faucibus. Ut nulla mi, finibus id aliquam at, lobortis dignissim neque. Duis ac nisl mauris.
 
-                Cum tota virtute salutandi et, ea eos evertitur abhorreant, quas latine inciderint et quo. Pro facete
-                mollis ei, nemore audire mandamus nam ne. Primis denique consetetur sea in. Minim denique vim et, cu
-                legere deserunt est. Eruditi insolens ne has, id quot iudicabit mei. Ius legimus intellegam et, ludus
-                utamur ea sit.
-                Lorem ipsum dolor sit amet, nec id illum inciderint, quidam aliquip pro ei, usu ferri assentior id.
-                At eos aeterno aliquid, commodo integre usu no. Malis novum corpora vix in. In nec error errem indoctum.
-
-                Eu cum velit quodsi. Pri ne primis dicunt nostrud. Legere noster mea ex. Audire detraxit mel at, quidam
-                quaerendum et nam, elitr admodum vel te. Invenire tincidunt mediocritatem pri an, an elit clita sit.
-
-                Eam ad gubergren intellegebat, in eos summo iriure liberavisse, unum democritum at sit. Ea ancillae
-                laboramus elaboraret quo. Viris propriae recusabo duo ut. Te tantas timeam has.
-
-                Sed ei numquam corrumpit, cu elitr ridens officiis duo, quo ad periculis splendide quaerendum. Atqui
-                munere ad est, at quem torquatos intellegam has. Eam magna electram convenire no, ea nominavi epicurei
-                reprimique qui. Cu quis munere scripta has. Ad est veniam abhorreant.
-
-                Cum tota virtute salutandi et, ea eos evertitur abhorreant, quas latine inciderint et quo. Pro facete
-                mollis ei, nemore audire mandamus nam ne. Primis denique consetetur sea in. Minim denique vim et, cu
-                legere deserunt est. Eruditi insolens ne has, id quot iudicabit mei. Ius legimus intellegam et, ludus
-                utamur ea sit.Lorem ipsum dolor sit amet, nec id illum inciderint, quidam aliquip pro ei, usu ferri
-                assentior id.
-                At eos aeterno aliquid, commodo integre usu no. Malis novum corpora vix in. In nec error errem indoctum.
-
-                Eu cum velit quodsi. Pri ne primis dicunt nostrud. Legere noster mea ex. Audire detraxit mel at, quidam
-                quaerendum et nam, elitr admodum vel te. Invenire tincidunt mediocritatem pri an, an elit clita sit.
-
-                Eam ad gubergren intellegebat, in eos summo iriure liberavisse, unum democritum at sit. Ea ancillae
-                laboramus elaboraret quo. Viris propriae recusabo duo ut. Te tantas timeam has.
-
-                Sed ei numquam corrumpit, cu elitr ridens officiis duo, quo ad periculis splendide quaerendum. Atqui
-                munere ad est, at quem torquatos intellegam has. Eam magna electram convenire no, ea nominavi epicurei
-                reprimique qui. Cu quis munere scripta has. Ad est veniam abhorreant.
-
-                Cum tota virtute salutandi et, ea eos evertitur abhorreant, quas latine inciderint et quo. Pro facete
-                mollis ei, nemore audire mandamus nam ne. Primis denique consetetur sea in. Minim denique vim et, cu
-                legere deserunt est. Eruditi insolens ne has, id quot iudicabit mei. Ius legimus intellegam et, ludus
-                utamur ea sit.
-            </Label>
+                In tincidunt leo sed arcu sodales viverra. Donec ut dapibus nibh, ut dignissim lacus. Quisque sed ex eros. Nulla viverra, quam vitae euismod feugiat, leo turpis cursus justo, porttitor mollis orci purus eget velit. Quisque pretium ullamcorper massa, sit amet auctor nulla. Nam ut consectetur purus, sit amet aliquet nulla. Donec faucibus nec odio non consequat. Aliquam placerat magna et sapien fermentum, a ultrices libero gravida. Nulla sed massa magna. Quisque placerat lacus a felis malesuada fringilla.</Label>
         </ScrollView>
     </Window>
 </Alloy>

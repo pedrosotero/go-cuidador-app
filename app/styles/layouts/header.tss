@@ -1,5 +1,0 @@
-"View":{
-    backgroundColor: "purple",
-    width: Titanium.UI.FILL,
-    height: 75,
-},

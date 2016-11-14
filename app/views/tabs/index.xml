@@ -1,0 +1,18 @@
+<Alloy>
+    <TabGroup>
+        <Menu id="menu" platform="android">
+            <MenuItem title="Configurações"/>
+            <MenuItem title="Pesquisar" showAsAction="Titanium.Android.SHOW_AS_ACTION_ALWAYS">
+                <ActionView>
+                    <SearchView ns="Ti.UI.Android" hintText="Pesquisar..."/>
+                </ActionView>
+            </MenuItem>
+        </Menu>
+        <Tab title="Cuidadores" id="feed">
+            <Require src="feed/index"/>
+        </Tab>
+        <Tab title="Contatos" id="feed">
+            <Require src="favorites/index"/>
+        </Tab>
+    </TabGroup>
+</Alloy>

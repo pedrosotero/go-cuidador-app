@@ -10,5 +10,23 @@
     width: Titanium.UI.FILL,
     height: Titanium.UI.FILL,
     top: '0',
-    backgroundColor: "pink"
+    backgroundColor: "#fff"
+},
+
+"ImageView": {
+    backgroundImage: "/images/placeholder.png",
+    width: 225,
+    height: 225
+},
+
+".title": {
+  top: 3,
+  color: '#000000',
+  font: { fontSize:18 },
+},
+
+".desciption": {
+  top: 3,
+  color: '#696969',
+  font: { fontSize:14 }
 },

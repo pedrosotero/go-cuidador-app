@@ -1,14 +1,38 @@
 <Alloy>
     <Window class="container" id="win">
-        <Require src="layouts/header"></Require>
         <ListView id="listView">
+            <Templates>
+                <Require src="templates/caregiver"/>
+            </Templates>
             <ListSection>
-                <ListItem title="List item 1"></ListItem>
-                <ListItem title="List item 2"></ListItem>
-                <ListItem title="List item 3"></ListItem>
-                <ListItem title="List item 4"></ListItem>
-                <ListItem title="List item 5"></ListItem>
-                <ListItem title="List item N"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver"></ListItem>
             </ListSection>
         </ListView>
     </Window>

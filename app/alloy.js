@@ -10,56 +10,21 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 
-var baseApiUrl = "";
+var baseApiUrl = "http://192.168.1.127/api";
 Alloy.Globals.baseApiUrl = baseApiUrl;
+var NavigationController = require('NavigationController'); // use the NavigationController library
 
-Alloy.Globals.ERR_ITERNET_DISCONNECTED = function (win) {
-    Alloy.Globals.error(win, 'Verifique sua conexão com a internet.')
-};
+var navController = new NavigationController();
+Alloy.Globals.navcontroller = navController;
 
-Alloy.Globals.error = function (win, error) {
-    var errors = Alloy.createController('form/error', {
-        error: error
-    }).getView();
+var CommonCalls = require('CommonCalls');
 
-    win.add(errors);
-}
+Alloy.Globals.ERR_ITERNET_DISCONNECTED = CommonCalls.ERR_ITERNET_DISCONNECTED;
+Alloy.Globals.error = CommonCalls.error;
+Alloy.Globals.callXhr = CommonCalls.xhr;
+Alloy.Globals.thisItemTemplate = CommonCalls.thisItemTemplate;
 
-Alloy.Globals.callXhr = function (url, params, method, _callback) {
-    console.log(url + ' :: ' + method);
-    if (url && method) {
-        var xhr = Ti.Network.createHTTPClient({
-            onload: function (e) {
-                var responseJSON = JSON.parse(this.responseText);
-                _callback({
-                    responseText: this.responseText || null,
-                    responseJSON: responseJSON || null
-                });
-                // console.log('>>> responseText: ' + this.responseText);
-            },
-            onerror: function (e) {
-                // console.log(this.responseText);
-                console.log('>>> error: ' + e.error);
-            },
-            timeout: 5000
-        });
-        console.log(params);
-        xhr.open(method, url);
-        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-        xhr.send(JSON.stringify(params));
-    }
-    else {
-        console.log('>>> parametros obrigatorios url e method.');
-    }
-};
 
-//facebook
-// Alloy.Globals.Facebook = require('facebook');
-// var fb = Alloy.Globals.Facebook;
-//
-// Alloy.Globals.facebookProxy = function (window) {
-//     if (Ti.Platform.name === 'android') {
-//         window.fbProxy = fb.createActivityWorker({lifecycleContainer: window});
-//     }
-//     return true;
-// }
+
+
+

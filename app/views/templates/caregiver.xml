@@ -1,0 +1,13 @@
+<Alloy>
+    <ItemTemplate name="caregiver">
+        <View>
+            <ImageView image="https://api.adorable.io/avatars/250/i"></ImageView>
+            <Label class="name">Nkosana Arcangelo</Label>
+            <Label class="excerpt">Crianças, Idosos, Protadores de necessidades especiais
+            </Label>
+            <Label class="neiborhood">Bairro: Taquara
+            </Label>
+            <Button/>
+        </View>
+    </ItemTemplate>
+</Alloy>
