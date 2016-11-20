@@ -1,0 +1,48 @@
+"Window[platform=android]": {
+  layout: "vertical",
+  top: 0,
+},
+
+".boxMenuConfig": {
+	layout: "vertical",
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	top: 0,
+},
+
+".listConfig": {
+	layout: "composite",
+	width: Ti.UI.FILL,
+	height: 52,
+	top: 0,
+},
+
+".textConfig": {
+  font: {
+    fontSize: 15,
+  },
+  color: "#4d4d4d",
+  left: 15,
+},
+
+".iconArrow": {
+	width: 8,
+	right: 15,
+},
+
+".rowl": {
+	width: Ti.UI.FILL,
+	height: "0.5dip",
+	backgroundColor: "#a4a4a4",
+	bottom: 0,
+},
+
+".bottom0": {
+	bottom: 0,
+},
+
+"Button": {
+   width: Titanium.UI.FILL,
+   height: Ti.UI.FILL,
+   backgroundSelectedColor: "#59ebebeb"
+},

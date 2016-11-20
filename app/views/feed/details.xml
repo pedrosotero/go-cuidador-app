@@ -1,7 +1,6 @@
 <Alloy>
     <Window class="container" id="win">
-        <ActionBar displayHomeAsUp="true" onHomeIconItemSelected="close">
-        </ActionBar>
+        <ActionBar displayHomeAsUp="true" title="Nkosana Arcangelo" onHomeIconItemSelected="close"/>
         <Menu id="menu" platform="android">
             <MenuItem title="Ligar">
             </MenuItem>
@@ -10,16 +9,8 @@
         </Menu>
         <ScrollView>
             <ImageView image="https://api.adorable.io/avatars/500/i"></ImageView>
-            <Label class="title">Nkosana Arcangelo</Label>
-            <Label class="desciption">                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget augue ut velit vulputate tincidunt sed non ligula. Etiam sit amet lacus augue. Aenean rutrum lacus et risus dapibus, ac efficitur ipsum luctus. Pellentesque ut mollis odio. Proin accumsan scelerisque erat maximus tempor. Quisque pharetra leo vitae leo gravida tristique. Nam efficitur quam quis ipsum eleifend consequat. Curabitur at ligula lorem. Donec eu semper quam, varius consectetur enim. Maecenas nec bibendum elit, et ullamcorper ligula. Aenean non fermentum dolor. Maecenas lorem odio, vulputate quis blandit non, tincidunt vitae mi. Praesent eu mi et velit bibendum congue.
-
-                Praesent pellentesque sit amet neque vel viverra. Pellentesque viverra arcu sit amet lorem tristique, porttitor cursus tellus facilisis. Mauris congue lacus eu neque hendrerit tincidunt. In hac habitasse platea dictumst. Ut ullamcorper, sapien sit amet mollis mattis, lectus nisi dictum ante, eget vestibulum nisl erat in nisi. Cras semper nunc ut quam consequat, vitae sagittis libero gravida. Sed porta eleifend mauris, sit amet euismod risus. Nulla eget tortor nisi.
-
-                Quisque pretium mi nec hendrerit pellentesque. Etiam porttitor tellus ipsum, at euismod neque consectetur in. Sed euismod sodales nunc, sit amet euismod dolor venenatis vitae. Vivamus vel convallis erat. Vivamus non placerat est. Fusce pharetra, nulla ac volutpat finibus, leo est rutrum quam, eget efficitur nibh lorem ac arcu. Nullam augue ipsum, egestas nec ipsum non, lobortis fringilla tellus.
-
-                Proin dictum interdum metus quis posuere. Suspendisse at ante eu eros imperdiet fringilla vel vel nisi. Phasellus molestie dapibus eros sit amet pellentesque. Donec massa magna, ultricies tincidunt bibendum non, congue ac lorem. Mauris ut placerat mauris, id aliquet ex. Suspendisse gravida id dui vitae fringilla. Curabitur cursus odio ut quam convallis, in fermentum nunc scelerisque. Sed nibh tortor, elementum at interdum sit amet, fermentum quis turpis. Donec maximus velit non velit ullamcorper, nec molestie nisl faucibus. Ut nulla mi, finibus id aliquam at, lobortis dignissim neque. Duis ac nisl mauris.
-
-                In tincidunt leo sed arcu sodales viverra. Donec ut dapibus nibh, ut dignissim lacus. Quisque sed ex eros. Nulla viverra, quam vitae euismod feugiat, leo turpis cursus justo, porttitor mollis orci purus eget velit. Quisque pretium ullamcorper massa, sit amet auctor nulla. Nam ut consectetur purus, sit amet aliquet nulla. Donec faucibus nec odio non consequat. Aliquam placerat magna et sapien fermentum, a ultrices libero gravida. Nulla sed massa magna. Quisque placerat lacus a felis malesuada fringilla.</Label>
+            <Label class="desciption">Description
+            </Label>
         </ScrollView>
     </Window>
 </Alloy>

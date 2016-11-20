@@ -1,0 +1,24 @@
+<Alloy>
+    <Window id="win" class="noActionBar">
+        <ActionBar displayHomeAsUp="true" title="Configurações" onHomeIconItemSelected="close"/>
+        <View class="boxMenuConfig">
+            <View class="listConfig">
+                <Label class="textConfig" text="Alterar Senha"/>
+                <ImageView class="iconArrow" image="/images/icon-arrow.png"/>
+                <View class="rowl"></View>
+                <Button onClick="onEditPasswordClick"/>
+            </View>
+            <View class="listConfig">
+                <Label class="textConfig" text="Logout"/>
+                <ImageView class="iconArrow" image="/images/icon-arrow.png"/>
+                <View class="rowl"></View>
+            </View>
+            <View class="listConfig">
+                <Label class="textConfig" text="Deletar Conta"/>
+                <ImageView class="iconArrow" image="/images/icon-arrow.png"/>
+                <View class="rowl"></View>
+                <Button onClick="onDeleteAccountClick"/>
+            </View>
+        </View>
+    </Window>
+</Alloy>

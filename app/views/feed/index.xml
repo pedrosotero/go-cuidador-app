@@ -5,7 +5,7 @@
                 <Require src="templates/caregiver"/>
             </Templates>
             <ListSection>
-                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver" searchableText="teste"></ListItem>
                 <ListItem template="caregiver"></ListItem>
                 <ListItem template="caregiver"></ListItem>
                 <ListItem template="caregiver"></ListItem>

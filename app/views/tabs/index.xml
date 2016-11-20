@@ -1,10 +1,10 @@
 <Alloy>
     <TabGroup>
         <Menu id="menu" platform="android">
-            <MenuItem title="Configurações"/>
+            <MenuItem title="Configurações" onClick="onOpenSettingsClick"/>
             <MenuItem title="Pesquisar" showAsAction="Titanium.Android.SHOW_AS_ACTION_ALWAYS">
                 <ActionView>
-                    <SearchView ns="Ti.UI.Android" hintText="Pesquisar..."/>
+                    <SearchView ns="Ti.UI.Android" hintText="Pesquisar..." id="searchView"/>
                 </ActionView>
             </MenuItem>
         </Menu>

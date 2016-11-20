@@ -1,0 +1,16 @@
+<Alloy>
+    <Window id="win" class="noActionBar">
+        <ActionBar displayHomeAsUp="true" title="Configurações" onHomeIconItemSelected="close"/>
+        <ScrollView>
+            <View class="boxForm">
+                <Require src="form/TextField" kind="password" hintText="Senha Atual"></Require>
+                <View class="form-group">
+                    <Button class="btn">Cancelar</Button>
+                </View>
+                <View class="form-group">
+                    <Button class="btn btnGray">Deletar Conta</Button>
+                </View>
+            </View>
+        </ScrollView>
+    </Window>
+</Alloy>
