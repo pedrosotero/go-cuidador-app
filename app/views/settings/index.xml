@@ -12,6 +12,7 @@
                 <Label class="textConfig" text="Logout"/>
                 <ImageView class="iconArrow" image="/images/icon-arrow.png"/>
                 <View class="rowl"></View>
+                <Button onClick="onLogoutClick"/>
             </View>
             <View class="listConfig">
                 <Label class="textConfig" text="Deletar Conta"/>

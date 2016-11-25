@@ -23,8 +23,3 @@ Alloy.Globals.ERR_ITERNET_DISCONNECTED = CommonCalls.ERR_ITERNET_DISCONNECTED;
 Alloy.Globals.error = CommonCalls.error;
 Alloy.Globals.callXhr = CommonCalls.xhr;
 Alloy.Globals.thisItemTemplate = CommonCalls.thisItemTemplate;
-
-
-
-
-

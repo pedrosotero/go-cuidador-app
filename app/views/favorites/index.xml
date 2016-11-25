@@ -1,6 +1,20 @@
 <Alloy>
-    <Window>
-        <ScrollView>
-        </ScrollView>
+    <Window class="container" id="win">
+        <ActionBar displayHomeAsUp="true" title="Favoritos" onHomeIconItemSelected="close"/>
+        <ListView id="listView">
+            <Templates>
+                <Require src="templates/caregiver"/>
+            </Templates>
+            <ListSection>
+                <ListItem template="caregiver" searchableText="Paula Lotti"
+                          name:text="Paula Lotti"
+                          image:image="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAlbAAAAJDliZjg4NWVkLTlkZGMtNGUwMy1iZGFiLWRkNjNlZThkYTNiMw.jpg"
+                          neiborhodd:text="Bairro: Bento Ribeiro"/>
+                <ListItem template="caregiver"
+                          name:text="Pedro Sotero"
+                          image:image="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAeZAAAAJGNhZjBmYzU5LTE5ZjItNGI5My1hZWNmLWE2YzA0N2M3N2MyMQ.jpg"/>
+
+            </ListSection>
+        </ListView>
     </Window>
 </Alloy>

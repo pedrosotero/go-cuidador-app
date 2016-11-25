@@ -5,7 +5,7 @@
 	height: 75,
 },
 
-"ImageView":{
+".avatar":{
     left: 0,
     height: Titanium.UI.FILL,
     width: 75,
@@ -37,4 +37,23 @@
   font: { fontSize:11 },
   bottom: 5,
   left: "25%"
+},
+
+".rate" : {
+    bottom: 5,
+    right: "10%",
+    height: "30",
+    width: "30",
+    layout: "composite"
+},
+
+".rateLabel" : {
+    color: '#696969',
+    font: { fontSize:12 },
+    left: "0"
+},
+
+".rateImage" : {
+    height: "15",
+    width: "15",
 },

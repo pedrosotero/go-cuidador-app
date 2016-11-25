@@ -1,3 +1,7 @@
+".window": {
+    layout:"composite",
+},
+
 ".container": {
 	layout: "vertical",
 	width: Titanium.UI.FILL,
@@ -13,9 +17,8 @@
     backgroundColor: "#fff"
 },
 
-"ImageView": {
+".avatar": {
     backgroundImage: "/images/placeholder.png",
-    width: 225,
     height: 225
 },
 
@@ -30,3 +33,103 @@
   color: '#696969',
   font: { fontSize:14 }
 },
+
+".rate" : {
+    height: "50",
+    width: "50",
+    layout: "composite"
+},
+
+".rateLabel" : {
+    color: '#696969',
+    font: { fontSize:18 },
+    left: "0"
+},
+
+".rateImage" : {
+    height: "25",
+    width: "25",
+},
+
+".rateButton": {
+   width: Titanium.UI.FILL,
+   height: Ti.UI.FILL,
+   backgroundSelectedColor: "#59ebebeb",
+   backgroundColor: "#white",
+   borderRadius: "25"
+},
+
+".transparentView": {
+	width: Titanium.UI.FILL,
+	height: Titanium.UI.FILL,
+	backgroundColor: "#4D000000"
+},
+
+".lightBox": {
+    "width": "95%",
+    "height": "400dip",
+    backgroundColor: "#FB94C9",
+    layout: "vertical",
+	borderRadius: "3dip"
+},
+
+".close": {
+    top: "2%",
+    width: "30dip",
+    height: "30dip",
+    right: "3%",
+    layout: "composite"
+},
+
+".closeIcon": {
+    width: "20dip",
+    height: "20dip"
+},
+
+".closeButton": {
+    width: Titanium.UI.FILL,
+    height: Titanium.UI.FILL,
+    borderRadius: "15dip",
+	backgroundColor: "transparent",
+    backgroundSelectedColor: "#59ebebeb",
+},
+
+".titleClose" : {
+    left: "5%",
+	font: {
+		fontSize: "18dip",
+	},
+	color: "#ffffff"
+},
+
+".text" : {
+    top: 5,
+	width: "90%",
+    height: "200dip",
+	backgroundColor: "white",
+	font: {
+		fontSize: "14dip",
+	},
+	color: "#000000",
+	borderRadius: "3dip",
+	verticalAlign: Titanium.UI.TEXT_VERTICAL_ALIGNMENT_TOP
+},
+
+"Picker": {
+    selectionIndicator: true
+},
+
+".sendButton": {
+   top: "10dip",
+   color: "#FB94C9",
+   backgroundColor: "#ffffff",
+   backgroundSelectedColor: "#59ebebeb",
+   borderRadius: "3dip"
+},
+
+".rateBox": {
+    layout: "horizontal",
+    left: "40%",
+    height: "20dip",
+    width: Titanium.UI.FILL
+}

@@ -1,7 +1,8 @@
 <Alloy>
     <Window id="win">
+        <ActionBar displayHomeAsUp="true" title="Cadastre-se" onHomeIconItemSelected="close"/>
         <ScrollView>
-            <ImageView class="logo" image="/images/top5-rio.png"/>
+            <!--<ImageView class="logo" image="/images/top5-rio.png"/>-->
             <View class="form">
                 <Require src="form/TextField" hintText="Nome" id="first_name"></Require>
                 <Require src="form/TextField" hintText="Sobrenome" id="last_name"></Require>

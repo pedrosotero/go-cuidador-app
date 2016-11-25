@@ -1,12 +1,16 @@
 "Window": {
+	layout: "composite",
 	width: Titanium.UI.FILL,
 	height: Titanium.UI.FILL,
 	backgroundColor: "#FB94C9",
 },
+
 "ScrollView": {
 	layout: "vertical",
 	width: Titanium.UI.FILL,
 	height: Titanium.UI.FILL,
+	top: 0,
+	left: 0
 },
 
 ".logo": {
@@ -24,12 +28,6 @@
 },
 
 ".form" : {
-	layout: "vertical",
-	width: "85%",
-	top: 0,
-},
-
-".form[platform=android]" : {
 	layout: "vertical",
 	width: "80%",
 	top: 0,
@@ -74,7 +72,7 @@
 },
 
 ".iconFace": {
-	width: "253dip",
+	width: "220dip",
 	height: "45dip",
 	image: "/images/btn-facebook.png"
 },

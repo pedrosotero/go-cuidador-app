@@ -1,12 +1,26 @@
 <Alloy>
     <Window class="container" id="win">
+        <Menu id="menu" platform="android">
+            <MenuItem title="Configurações" onClick="onOpenSettingsClick"/>
+            <MenuItem title="Pesquisar" showAsAction="Titanium.Android.SHOW_AS_ACTION_ALWAYS">
+                <ActionView>
+                    <SearchView ns="Ti.UI.Android" hintText="Pesquisar..." id="searchView"/>
+                </ActionView>
+            </MenuItem>
+            <MenuItem title="Favoritos" onClick="onFavoritesClick"/>
+        </Menu>
         <ListView id="listView">
             <Templates>
                 <Require src="templates/caregiver"/>
             </Templates>
             <ListSection>
-                <ListItem template="caregiver" searchableText="teste"></ListItem>
-                <ListItem template="caregiver"></ListItem>
+                <ListItem template="caregiver" searchableText="Paula Lotti"
+                          name:text="Paula Lotti"
+                          image:image="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAlbAAAAJDliZjg4NWVkLTlkZGMtNGUwMy1iZGFiLWRkNjNlZThkYTNiMw.jpg"
+                          neiborhodd:text="Bairro: Bento Ribeiro"/>
+                <ListItem template="caregiver"
+                          name:text="Pedro Sotero"
+                          image:image="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAeZAAAAJGNhZjBmYzU5LTE5ZjItNGI5My1hZWNmLWE2YzA0N2M3N2MyMQ.jpg"/>
                 <ListItem template="caregiver"></ListItem>
                 <ListItem template="caregiver"></ListItem>
                 <ListItem template="caregiver"></ListItem>

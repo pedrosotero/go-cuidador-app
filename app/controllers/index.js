@@ -1,2 +1,2 @@
-var win = Alloy.createController('tabs/index').getView();
+var win = Alloy.createController('login/index').getView();
 Alloy.Globals.navcontroller.open(win);
