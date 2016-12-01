@@ -36,7 +36,7 @@ function xhrCall(url, params, method, window, _callback) {
             var keys = Object.keys(responseJSON);
 
             if (keys[0] == 'expired_token' && this.status == 401) {
-                var user = Alloy.createCollection('Auth');
+                var user = Alloy.createCollection('user');
                 user.deleteAll();
 
                 var newWindow = Alloy.createController('login/index').getView();

@@ -23,3 +23,13 @@ Alloy.Globals.ERR_ITERNET_DISCONNECTED = CommonCalls.ERR_ITERNET_DISCONNECTED;
 Alloy.Globals.error = CommonCalls.error;
 Alloy.Globals.callXhr = CommonCalls.xhr;
 Alloy.Globals.thisItemTemplate = CommonCalls.thisItemTemplate;
+
+Alloy.Globals.Facebook = require('facebook');
+var fb = Alloy.Globals.Facebook;
+
+Alloy.Globals.facebookProxy = function (window) {
+    if (Ti.Platform.name === 'android') {
+        window.fbProxy = fb.createActivityWorker({lifecycleContainer: window});
+    }
+    return true;
+}

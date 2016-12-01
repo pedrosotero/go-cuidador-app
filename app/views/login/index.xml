@@ -12,7 +12,7 @@
                     <Label class="txtCadastro">ou</Label>
                 </View>
                 <View class="form-group">
-                    <View class="btnFacebook" onClick="onFacebookLoginClick">
+                    <View class="btnFacebook" onClick="onFacebookButtonClick">
                         <ImageView class="iconFace"/>
                     </View>
                 </View>
