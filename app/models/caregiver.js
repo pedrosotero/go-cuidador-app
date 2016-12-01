@@ -25,6 +25,7 @@ exports.definition = {
                 var transformed = this.toJSON();
 
                 transformed.full_name = transformed.first_name + ' ' + transformed.last_name;
+                transformed.searchableText = transformed.first_name + ' ' + transformed.last_name + ' ' + transformed.neighborhood + ' ' + transformed.types;
                 return transformed;
             }
         });

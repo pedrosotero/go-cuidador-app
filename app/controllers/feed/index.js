@@ -39,3 +39,7 @@ function callXhr(url, params) {
         collection.add(caregivers, {merge: true});
     });
 }
+
+onSearchChange = function onChange(e) {
+    $.listView.searchText = e.source.value;
+};

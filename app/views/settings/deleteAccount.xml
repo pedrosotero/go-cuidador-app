@@ -3,12 +3,9 @@
         <ActionBar displayHomeAsUp="true" title="Configurações" onHomeIconItemSelected="close"/>
         <ScrollView>
             <View class="boxForm">
-                <Require src="form/TextField" kind="password" hintText="Senha Atual"></Require>
+                <Require src="form/TextField" tipo="password" id="password" hintText="Senha Atual"></Require>
                 <View class="form-group">
-                    <Button class="btn">Cancelar</Button>
-                </View>
-                <View class="form-group">
-                    <Button class="btn btnGray">Deletar Conta</Button>
+                    <Button class="btn" onClick="onDeleteClick">Deletar Conta</Button>
                 </View>
             </View>
         </ScrollView>
