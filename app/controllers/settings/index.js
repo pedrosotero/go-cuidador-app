@@ -13,5 +13,6 @@ function onDeleteAccountClick() {
 }
 
 function onLogoutClick() {
-    Alloy.Globals.navcontroller.home();
+    var win = Alloy.createController('login/index').getView();
+    Alloy.Globals.navcontroller.open(win);
 }

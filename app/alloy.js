@@ -10,7 +10,7 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 
-var baseApiUrl = "http://192.168.1.127/api";
+var baseApiUrl = "http://9e077d3f.ngrok.io/api";
 Alloy.Globals.baseApiUrl = baseApiUrl;
 var NavigationController = require('NavigationController'); // use the NavigationController library
 

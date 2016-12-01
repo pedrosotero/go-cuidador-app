@@ -1,3 +1,0 @@
-<Alloy>
-    <SearchView ns="Ti.UI.Android" hintText="Pesquisar..." id="searchView"/>
-</Alloy>

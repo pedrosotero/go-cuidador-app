@@ -1,18 +1,14 @@
 <Alloy>
     <ItemTemplate name="caregiver">
         <View>
-            <!--<ImageView image="https://api.adorable.io/avatars/250/i" class="avatar"/>-->
-            <ImageView bindId="image"
-                       image="https://api.adorable.io/avatars/250/i"
-                       class="avatar"/>
+            <ImageView bindId="avatar" class="avatar"/>
             <Label class="name" bindId="name">Nkosana Arcangelo</Label>
-            <Label class="excerpt">Crianças, Idosos, Protadores de necessidades especiais
+            <Label class="excerpt" bindId="types">Crianças, Idosos, Protadores de necessidades especiais
             </Label>
             <Label class="neiborhood" bindId="neiborhood">Bairro: Taquara
             </Label>
             <View class="rate">
-                <Label class="rateLabel">5
-                </Label>
+                <Label class="rateLabel" bindId="rate"/>
                 <ImageView image="/images/rating-star.png" class="rateImage"/>
             </View>
             <Button/>
