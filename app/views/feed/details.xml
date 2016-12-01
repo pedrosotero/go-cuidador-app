@@ -1,6 +1,7 @@
 <Alloy>
-    <Window id="win" class="window">
-        <ActionBar displayHomeAsUp="true" title="Paula Lotti" onHomeIconItemSelected="close"/>
+    <Model src="caregiver"/>
+    <Window id="win" class="window" onOpen="setTitleActionBar">
+        <ActionBar displayHomeAsUp="true" onHomeIconItemSelected="close"/>
         <Menu id="menu" platform="android">
             <MenuItem title="Ligar" onClick="onCallClick"/>
             <MenuItem title="Enviar E-mail" onClick="onMailClick"/>
@@ -9,26 +10,15 @@
         <View clas="container">
             <ScrollView>
                 <ImageView class="avatar"
-                           image="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAlbAAAAJDliZjg4NWVkLTlkZGMtNGUwMy1iZGFiLWRkNjNlZThkYTNiMw.jpg"></ImageView>
+                           image="{caregiver.avatar}"></ImageView>
                 <View class="rate">
-                    <Label class="rateLabel">5
-                    </Label>
+                    <Label class="rateLabel" text="{caregiver.rate}"/>
                     <ImageView image="/images/rating-star.png" class="rateImage"/>
                     <Button class="rateButton" onClick="onRateClick"/>
                 </View>
-                <Label class="desciption" text="Analista de Requisitos
-Petrobras Distribuidora, contratada pela Sonda IT abril de 2015 – até o momento (1 ano 8 meses)
-• Levantamento de Requisitos em conjunto com usuário;
-• Especificação de Caso de Uso;
-• Especificações técnicas;
-• Elaboração de Documento de Visão, Documento de Regras e Negócio, entre outros, pertinentes ao desenvolvimento dos projetos;
-• Casos de Teste;
-• Modelagem UML;
-• Acompanhamento na fase de desenvolvimento;
-• Ralização de testes;
-• Homologação com o cliente;
-• Acompanhamento de deploy em ambiente de produção.">
-                </Label>
+                <Label class="description" text="Bairro: {caregiver.neighborhood}"/>
+                <Label class="description" text="Especialidades: {caregiver.types}"/>
+                <Label class="description" text="{caregiver.description}"/>
             </ScrollView>
         </View>
         <View class="transparentView" visible="false" id="transparentView">
@@ -39,7 +29,7 @@ Petrobras Distribuidora, contratada pela Sonda IT abril de 2015 – até o momen
                 </View>
                 <View class="rateBox">
                     <ImageView image="/images/rating-star.png" class="rateImage"/>
-                    <Picker>
+                    <Picker onChange="report" id="picker">
                         <Column>
                             <Row title="1"/>
                             <Row title="2"/>
@@ -51,7 +41,7 @@ Petrobras Distribuidora, contratada pela Sonda IT abril de 2015 – até o momen
                 </View>
                 <Label text="Conte-nos sua opinião (opcional)" class="titleClose"/>
                 <TextField id="textField" class="text"/>
-                <Button title="Enviar" class="sendButton"/>
+                <Button title="Enviar" class="sendButton" onClick="onSubmitClick"/>
             </View>
         </View>
     </Window>

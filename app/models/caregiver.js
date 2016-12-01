@@ -15,7 +15,7 @@ exports.definition = {
         },
         "adapter": {
             "type": "sql",
-            "collection_name": "user",
+            "collection_name": "caregiver",
             "idAttribute": "id"
         },
     },

@@ -28,7 +28,7 @@
   font: { fontSize:18 },
 },
 
-".desciption": {
+".description": {
   top: 3,
   color: '#696969',
   font: { fontSize:14 }

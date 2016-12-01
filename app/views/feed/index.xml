@@ -16,6 +16,7 @@
             </Templates>
             <ListSection dataCollection="caregiver">
                 <ListItem template="caregiver"
+                          card:id="{id}"
                           name:text="{full_name}"
                           types:text="{types}"
                           rate:text="{rate}"

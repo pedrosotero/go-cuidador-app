@@ -11,7 +11,7 @@
                 <Label class="rateLabel" bindId="rate"/>
                 <ImageView image="/images/rating-star.png" class="rateImage"/>
             </View>
-            <Button/>
+            <Button bindId="card"/>
         </View>
     </ItemTemplate>
 </Alloy>

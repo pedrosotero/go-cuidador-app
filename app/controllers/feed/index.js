@@ -1,9 +1,17 @@
-callXhr('/feed', {});
 var collection = Alloy.Collections.instance('caregiver');
+collection.fetch();
+
+callXhr('/feed', {});
 
 $.listView.addEventListener('itemclick', function (e) {
-    var win = Alloy.createController('feed/details').getView();
-    Alloy.Globals.navcontroller.open(win);
+    var _this = Alloy.Globals.thisItemTemplate(e);
+    Alloy.Globals.callXhr(Alloy.Globals.baseApiUrl + "/feed/" + _this.card.id, {}, "GET", $.win, function (e) {
+        var json = e.responseJSON;
+        var params = json;
+
+        var win = Alloy.createController('feed/details', params).getView();
+        Alloy.Globals.navcontroller.open(win);
+    });
 });
 
 function onOpenSettingsClick() {

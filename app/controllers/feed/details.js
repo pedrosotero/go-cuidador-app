@@ -1,3 +1,15 @@
+var args = arguments[0] || {};
+
+Alloy.Models.caregiver.set(args);
+Alloy.Models.caregiver.fetch();
+
+function setTitleActionBar() {
+    var actionBar = $.win.activity.actionBar;
+    if (actionBar) {
+        actionBar.title = Alloy.Models.caregiver.get('first_name') + ' ' + Alloy.Models.caregiver.get('last_name');
+    }
+}
+
 function close() {
     Alloy.Globals.navcontroller.close();
 }
@@ -11,14 +23,34 @@ function onCloseButtonClick() {
 }
 
 function onCallClick() {
-    Ti.Platform.openURL('tel:' + "021986436361");
+    Ti.Platform.openURL('tel:' + Alloy.Models.caregiver.get('phone'));
 }
 
+function onSubmitClick() {
+    var params = {
+        rate: rate,
+        caregiver_id: Alloy.Models.caregiver.get('id'),
+        client_id: Alloy.Globals.User.id,
+        description: $.textField.value
+    };
+
+    Alloy.Globals.callXhr(Alloy.Globals.baseApiUrl + '/rate', params, "POST", $.win, function (e) {
+        Ti.API.info(e.responseText);
+        $.transparentView.hide();
+    });
+}
 function onMailClick() {
     var emailDialog = Titanium.UI.createEmailDialog();
     emailDialog.subject = "CuidadorGO! App";
-    emailDialog.toRecipients = "pedrosoteroth@gmail.com.br";
+    emailDialog.toRecipients = Alloy.Models.caregiver.get('email');
     emailDialog.messageBody = 'Olá !';
 
     emailDialog.open();
+}
+
+var rate = 1;
+
+function report(e) {
+    Ti.API.info('User selected: ' + e.row.title);
+    rate = e.row.title;
 }
