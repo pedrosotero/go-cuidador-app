@@ -34,6 +34,13 @@ function onSubmitClick() {
         description: $.textField.value
     };
 
+
+    Ti.API.info('>>>> tretou');
+    Ti.API.info(rate);
+    Ti.API.info(Alloy.Models.caregiver.get('id'));
+    Ti.API.info(Alloy.Globals.User.id);
+    Ti.API.info($.textField.value);
+
     Alloy.Globals.callXhr(Alloy.Globals.baseApiUrl + '/rate', params, "POST", $.win, function (e) {
         Ti.API.info(e.responseText);
         $.transparentView.hide();

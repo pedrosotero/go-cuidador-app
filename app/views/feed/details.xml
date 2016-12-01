@@ -5,7 +5,7 @@
         <Menu id="menu" platform="android">
             <MenuItem title="Ligar" onClick="onCallClick"/>
             <MenuItem title="Enviar E-mail" onClick="onMailClick"/>
-            <MenuItem title="Favoritar"/>
+            <!--<MenuItem title="Favoritar"/>-->
         </Menu>
         <View clas="container">
             <ScrollView>

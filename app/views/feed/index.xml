@@ -8,7 +8,7 @@
                     <SearchView ns="Ti.UI.Android" hintText="Pesquisar..." id="searchView" onChange="onSearchChange"/>
                 </ActionView>
             </MenuItem>
-            <MenuItem title="Favoritos" onClick="onFavoritesClick"/>
+            <!--<MenuItem title="Favoritos" onClick="onFavoritesClick"/>-->
         </Menu>
         <ListView id="listView">
             <Templates>
