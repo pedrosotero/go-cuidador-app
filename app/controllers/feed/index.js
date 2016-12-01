@@ -1,4 +1,5 @@
 var collection = Alloy.Collections.instance('caregiver');
+collection.deleteAll();
 collection.fetch();
 
 callXhr('/feed', {});
@@ -32,6 +33,7 @@ function callXhr(url, params) {
         var data = e.responseJSON;
         for (var i = 0; i < data.length; i++) {
             currentCaregiver = Alloy.createModel('caregiver', data[i]);
+            Ti.API.info(data[i].neighborhood);
             caregivers.push(currentCaregiver);
         }
         collection.add(caregivers, {merge: true});

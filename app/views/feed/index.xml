@@ -21,7 +21,7 @@
                           types:text="{types}"
                           rate:text="{rate}"
                           avatar:image="{avatar}"
-                          neiborhodd:text="Bairro: {neighborhood}"/>
+                          neighborhood:text="Bairro: {neighborhood}"/>
             </ListSection>
         </ListView>
     </Window>

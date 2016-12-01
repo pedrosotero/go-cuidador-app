@@ -2,11 +2,9 @@
     <ItemTemplate name="caregiver">
         <View>
             <ImageView bindId="avatar" class="avatar"/>
-            <Label class="name" bindId="name">Nkosana Arcangelo</Label>
-            <Label class="excerpt" bindId="types">Crianças, Idosos, Protadores de necessidades especiais
-            </Label>
-            <Label class="neiborhood" bindId="neiborhood">Bairro: Taquara
-            </Label>
+            <Label class="name" bindId="name"/>
+            <Label class="excerpt" bindId="types"/>
+            <Label class="neighborhood" bindId="neighborhood"/>
             <View class="rate">
                 <Label class="rateLabel" bindId="rate"/>
                 <ImageView image="/images/rating-star.png" class="rateImage"/>

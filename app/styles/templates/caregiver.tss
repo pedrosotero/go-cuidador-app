@@ -32,7 +32,7 @@
   left: "25%"
 },
 
-".neiborhood": {
+".neighborhood": {
   color: '#696969',
   font: { fontSize:11 },
   bottom: 5,
